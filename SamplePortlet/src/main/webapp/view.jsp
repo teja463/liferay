@@ -18,4 +18,4 @@
 
 <portlet:defineObjects />
 
-This is the <b>SamplePortlet1</b>.
+This is just a sample portlet
