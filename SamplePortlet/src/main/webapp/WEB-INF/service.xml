@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN"
+"http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.teja.services" auto-namespace-tables="no">
+    <author>Teja</author>
+    <namespace>sample</namespace>
+
+    <entity name="Sample" local-service="true" remote-service="true">
+
+        <!-- PK fields -->
+
+        <column name="id" type="long" primary="true" id-type="increment" />
+
+        <!-- Audit fields -->
+
+        <column name="name" type="String" />
+        <column name="email" type="String" />
+        
+        <!-- Order -->
+
+        <order by="asc">
+            <order-column name="id" />
+        </order>
+
+        <!-- Finder methods -->
+
+        <finder name="GroupId" return-type="Collection">
+            <finder-column name="id" />
+        </finder>
+    </entity>
+</service-builder>
