@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 
-<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	version="2.0">
 	<portlet>
 		<portlet-name>SamplePortlet</portlet-name>
 		<display-name>SamplePortlet</display-name>
@@ -8,6 +11,14 @@
 		<init-param>
 			<name>view-template</name>
 			<value>/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>copy-request-parameters</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>add-process-action-success-action</name>
+			<value>false</value>
 		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
